@@ -1,4 +1,4 @@
-<h1 align="center">SQL-SSMS</h1>
+<h1 align="center">SQLCaseStudies-SSMS</h1>
 
 A collection of SQL scripts and case studies executed using **SQL Server Management Studio (SSMS)**. These projects focus on real-world business scenarios, data cleaning, budgeting, internship tasks, and data exploration.
 
