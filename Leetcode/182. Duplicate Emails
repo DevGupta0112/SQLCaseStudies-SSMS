@@ -43,3 +43,8 @@ Explanation: a@b.com is repeated two times.
 
 
 Solution :
+
+Select email
+From Person
+GROUP BY email
+HAVING Count(email)>1;
