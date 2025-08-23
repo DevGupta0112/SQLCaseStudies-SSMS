@@ -40,7 +40,7 @@ Example 1:
 Input: 
 Employee table:
 +----+-------+--------+--------------+
-| id | name  | salary | departmentId |
+| id | name  | salary | departmentId | 
 +----+-------+--------+--------------+
 | 1  | Joe   | 70000  | 1            |
 | 2  | Jim   | 90000  | 1            |
