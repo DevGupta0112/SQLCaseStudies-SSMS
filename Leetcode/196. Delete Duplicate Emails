@@ -47,3 +47,14 @@ Explanation: john@example.com is repeated two times. We keep the row with the sm
  
 
 Solution :
+
+
+with cte_sub1 as (
+    select min(id) as id , email 
+    from person
+    group by email
+)
+
+delete from 
+person 
+where id not in (select id from cte_sub1)
