@@ -48,3 +48,13 @@ In 2015-01-04, the temperature was higher than the previous day (20 -> 30).
 
 
 Answer :
+
+
+with base as
+(select *, lag(recorddate) over(order by recorddate asc) as prev_day
+, lag(temperature) over(order by recorddate asc) as prev_temp
+from weather)
+
+select id
+from base
+where temperature>prev_temp and datediff(day, prev_day, recorddate)=1
